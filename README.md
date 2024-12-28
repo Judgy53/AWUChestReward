@@ -5,6 +5,7 @@ Risk of Rain 2 mod. Replaces Alloy Worship Unit kill reward by legendary chest(s
 ![](./icon.png)
 
 ## Configuration
+Every configuration entry is editable in-game via the [Risk Of Options](https://thunderstore.io/package/Rune580/Risk_Of_Options/) mod.
 
 | Name                    | Type    | Default    | Description                                                                                                                                                                                                                      |
 |-------------------------|---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
