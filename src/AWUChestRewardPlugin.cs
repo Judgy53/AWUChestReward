@@ -19,6 +19,8 @@ namespace AWUChestReward
         public const string PluginName = "AWUChestReward";
         public const string PluginVersion = "1.0.0";
 
+        public static string PluginDirectory { get; private set; }
+
         private readonly GameObject _chestPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/GoldChest/GoldChest.prefab").WaitForCompletion();
         private readonly GameObject _fxPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/LightningStrikeOnHit/SimpleLightningStrikeImpact.prefab").WaitForCompletion();
         
@@ -29,6 +31,8 @@ namespace AWUChestReward
 
         public void Awake()
         {
+            PluginDirectory = System.IO.Path.GetDirectoryName(Info.Location);
+
             Log.Init(Logger);
             AWUConfig.Init(Config);
 
