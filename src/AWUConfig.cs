@@ -24,7 +24,7 @@ namespace AWUChestReward
             ChestCost = config.Bind("Chest Cost", "Base Cost", 0,
                 "Cost of the chest. \nDefault Legendary chest cost is 400.\n0 is free.");
             ChestCostScalingMode = config.Bind("Chest Cost", "Scaling Mode", ScalingMode.StageStart,
-                "Defines how the cost of chest scales :\n- None: Cost doesn't scale at all.\nStageStart: Cost scales with the difficulty at the start of the stage.\nOnKill: Cost scales with the difficulty at the time AWU is killed.");
+                "Defines how the cost of chest scales :\n- None: Cost doesn't scale at all.\n- StageStart: Cost scales with the difficulty at the start of the stage.\n- OnKill: Cost scales with the difficulty at the time AWU is killed.");
 
             ScaleWithPlayerCount = config.Bind("Multiplayer", "Scale With Player Count", true,
                 "True: spawns one chest for each player.\nFalse: spawns only one chest disregarding the amount of players.");
