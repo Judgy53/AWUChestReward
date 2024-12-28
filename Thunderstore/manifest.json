@@ -1,0 +1,10 @@
+﻿{
+	"name": "AWUChestReward",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/Judgy53/RoR2-AWUChestReward",
+	"description": "Replace Alloy Worship Unit kill reward by legendary chest(s).",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.2108",
+		"RiskofThunder-HookGenPatcher-1.2.3"
+	]
+}
