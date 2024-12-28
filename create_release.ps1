@@ -45,7 +45,9 @@ if (Test-Path $ManifestPath) {
 # Update version in AWUChestRewardPlugin.cs
 $PluginPath = "src\AWUChestRewardPlugin.cs"
 if (Test-Path $PluginPath) {
-    (Get-Content -Path $PluginPath) -replace '^(\s*public const string PluginVersion = )"[^"]*";', "`$1\"$Version\";" | Set-Content -Path $PluginPath
+    $PluginContent = Get-Content -Path $PluginPath
+    $UpdatedPluginContent = $PluginContent -replace '^(\s*public const string PluginVersion = )"[^"]*";', "`$1`"$Version`";"
+    $UpdatedPluginContent | Set-Content -Path $PluginPath
     Write-Host "Updated AWUChestRewardPlugin.cs with version: $Version"
 } else {
     Write-Host "AWUChestRewardPlugin.cs not found at path: $PluginPath"
